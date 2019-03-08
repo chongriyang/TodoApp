@@ -14,18 +14,14 @@ public class LogicController {
 	}
 	
 	public void addTask(Task task) {
+		System.out.println("testing");
+		System.out.println(task);
 		storage.getTasks().put(storage.getNewTaskId(), task);
 	}
 	
 	public void delTask(int id) {
 		if (storage.getTasks().get(id) != null) {
 			storage.getTasks().remove(id);
-		}
-	}
-	
-	public void modifyTask(int id, Task task) {
-		if (storage.getTasks().get(id) != null) {
-			storage.getTasks().put(id, task);
 		}
 	}
 }

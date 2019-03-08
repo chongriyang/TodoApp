@@ -32,6 +32,7 @@ public class Main {
 					System.out.println("Enter new name:");
 					modifyInput = sc.next().trim();
 					System.out.println("modifytask" + modifyTask);
+					
 					if (!modifyInput.isEmpty()) {
 						modifyTask.setName(modifyInput);
 					}
@@ -43,7 +44,7 @@ public class Main {
 					}
 					break;
 				case 3:
-					System.out.println("Enter Task id:");
+					System.out.println("Enter Task ID:");
 					logic.delTask(sc.nextInt());
 					break;
 				case 4:
@@ -53,7 +54,7 @@ public class Main {
 						System.out.println("Task ID: " + entry.getKey() + "\tName: " 
 								+ entry.getValue().getName() + "\tDescription: " + entry.getValue().getDescription());
 					}
-					
+
 					break;
 				}
 			}

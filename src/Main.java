@@ -9,6 +9,7 @@ public class Main {
 			if (sc.hasNext()) {
 				input = sc.next();
 				System.out.println(input);
+				
 			}
 		}
 	}
